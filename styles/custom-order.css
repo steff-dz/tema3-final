@@ -176,12 +176,12 @@ span {
 
 #progressContainer {
 	height: 8vh;
-	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	z-index: 10;
 	margin-top: 1rem;
 	margin-bottom: 0;
+	display: none;
 }
 
 .progressBox {
@@ -194,6 +194,9 @@ span {
 	border: 1px solid black;
 }
 
+/* .progessBox:hover {
+	background-color: rgb(91, 150, 91);
+} */
 .confirmationMessage {
 	text-align: center;
 	font-weight: 600;
