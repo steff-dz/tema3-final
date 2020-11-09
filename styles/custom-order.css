@@ -1,6 +1,10 @@
 body {
 	margin: 0;
-	background-color: #f2efea;
+	background-color: #cbc1b1;
+	/* background-image: url(https://images.pexels.com/photos/301717/pexels-photo-301717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 100vh; */
 }
 
 main {
@@ -18,9 +22,15 @@ h1 {
 
 main h1 {
 	font-size: 3rem;
+	letter-spacing: .1rem;
 	margin-top: .5em;
 	color: black;
 	margin-bottom: 0;
+	/* background-color: white; */
+	padding: 1rem;
+	border-radius: 10px;
+	font-weight: 700;
+	/* box-shadow: 1px 3px 11px 5px rgba(0, 0, 0, 0.54); */
 }
 
 main > p {
@@ -33,8 +43,9 @@ main > p {
 	overflow-x: hidden;
 	line-height: 1.3em;
 	color: black;
-	/* background-color: #cbbcb1; */
 	border-radius: 10px;
+	background-color: white;
+	box-shadow: 1px 3px 11px 5px rgba(0, 0, 0, 0.54);
 }
 
 form {
@@ -51,7 +62,7 @@ form {
 }
 
 section {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -63,6 +74,8 @@ section {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
+	background-color: white;
+	box-shadow: 1px 3px 11px 5px rgba(0, 0, 0, 0.54);
 	/* margin-top: 5.5%; */
 }
 
@@ -74,7 +87,7 @@ section {
 	100% {
 		margin: auto 10%;
 		right: 0vw;
-		top: 1%;
+		top: 2%;
 	}
 }
 
@@ -89,6 +102,12 @@ section {
 	margin-bottom: 5px;
 }
 
+input {
+	border: none;
+	border-bottom: 1px solid black;
+	font-size: 1.5rem;
+}
+
 input[name="name"] {
 	width: 35%;
 	margin: .5rem;
@@ -100,6 +119,7 @@ input[name="productType"] {
 
 select {
 	width: 70%;
+	font-size: 1.5rem;
 }
 
 h2 {
@@ -130,13 +150,13 @@ span {
 	height: 15px;
 	width: 15px;
 	margin: 2px;
-	background-color: #eee;
+	background-color: lightgrey;
 	border-radius: 50%;
 }
 
-.priceContainer:hover input ~ span {
+/* .priceContainer:hover input ~ span {
 	background-color: rgb(153, 152, 152);
-}
+} */
 
 .priceContainer input:checked ~ span {
 	background-color: lightgreen;
@@ -175,9 +195,7 @@ span {
 	}
 }
 
-#startButton,
-.nextButton,
-#submitButton {
+button {
 	width: 55%;
 	padding: .3em;
 }
@@ -202,8 +220,12 @@ span {
 	justify-content: center;
 	align-items: center;
 	margin-top: 3.5%;
+	background-color: white;
 }
 
+.progressBox:hover {
+	background-color: lightgrey;
+}
 .confirmationMessage {
 	text-align: center;
 	font-weight: 600;
@@ -294,12 +316,20 @@ span {
 		padding: 0 25em;
 	}
 
+	main h1 {
+		font-size: 4rem;
+	}
+
 	main > p {
 		border: none;
 		height: fit-content;
 		overflow: hidden;
 		padding-top: 1rem;
 		line-height: 1.3em;
+	}
+
+	button {
+		padding: 1rem;
 	}
 
 	#progressContainer {
@@ -341,7 +371,7 @@ span {
 
 		100% {
 			/* margin: 5.5% 10%; */
-			margin: -5rem 28%;
+			margin: -3rem 28%;
 			right: 0vw;
 		}
 	}
