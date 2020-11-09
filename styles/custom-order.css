@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background-color: #cbbcb1;
 }
 
 main {
@@ -18,6 +19,8 @@ h1 {
 main h1 {
 	font-size: 3rem;
 	margin-top: .5em;
+	color: black;
+	margin-bottom: 0;
 }
 
 main > p {
@@ -29,6 +32,9 @@ main > p {
 	overflow: scroll;
 	overflow-x: hidden;
 	line-height: 1.3em;
+	color: black;
+	background-color: #f2efea;
+	border-radius: 10px;
 }
 
 form {
@@ -289,7 +295,7 @@ span {
 		border: none;
 		height: fit-content;
 		overflow: hidden;
-		padding-top: 0;
+		padding-top: 1rem;
 		line-height: 1.3em;
 	}
 

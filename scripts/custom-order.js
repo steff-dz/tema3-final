@@ -44,11 +44,8 @@ buttons[3].addEventListener('click', function(event) {
 });
 
 //BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR
-// progressContainer.addEventListener('click', () => {
-// 	console.log('hola');
-// });
-
 progressBoxes[0].addEventListener('click', returnPageOne);
+progressBoxes[1].addEventListener('click', returnPageTwo);
 // for (box of progressBoxes) {
 // 	box.addEventListener('click', () => {
 // 		console.log('hi');
@@ -143,4 +140,8 @@ function returnPageOne() {
 		sections[1].style.visibility = 'hidden';
 		sections[0].style.visibility = 'visible';
 	}
+}
+
+function returnPageTwo() {
+	console.log('button2');
 }
