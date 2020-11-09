@@ -6,6 +6,7 @@ const sections = document.querySelectorAll('section');
 const hammers = document.querySelectorAll('.fa-hammer');
 const buttons = document.querySelectorAll('button');
 const progressContainer = document.querySelector('#progressContainer');
+const progressBoxes = document.querySelectorAll('.progressBox');
 
 //INPUT VARIABLES FOR FIRST FORM PAGE-----------
 const firstName = document.querySelector('#firstName');
@@ -42,18 +43,29 @@ buttons[3].addEventListener('click', function(event) {
 	dropHammer(finalPage);
 });
 
+//BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR
+// progressContainer.addEventListener('click', () => {
+// 	console.log('hola');
+// });
+
+progressBoxes[0].addEventListener('click', returnPageOne);
+// for (box of progressBoxes) {
+// 	box.addEventListener('click', () => {
+// 		console.log('hi');
+// 	});
+// }
 //BELOW ARE ALL MY FUNCTIONS
 
 //This function removes the initial elements, calls the progressbar function, pulls in the first section/first form page.
 function enterForm() {
 	main.style.display = 'none';
 	progressContainer.style.display = 'flex';
+	progressContainer.children[0].style.backgroundColor = 'lightgreen';
 
 	for (hammer of hammers) {
 		hammer.style.animationName = 'hammerUp';
 	}
 
-	// progressContainer.children[0].style.backgroundColor = 'lightgreen';
 	form.style.right = '0';
 	sections[0].style.visibility = 'visible';
 	sections[0].style.position = 'absolute';
@@ -123,4 +135,12 @@ function finalPage() {
 	</ul></div>
 	<h2 class="confirmationMessage">I'll get in touch with you soon! </h2>
 	`;
+}
+
+function returnPageOne() {
+	console.log('button1');
+	if (sections[0].style.visibility === 'hidden') {
+		sections[1].style.visibility = 'hidden';
+		sections[0].style.visibility = 'visible';
+	}
 }

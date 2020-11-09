@@ -188,15 +188,13 @@ span {
 	width: 4rem;
 	height: 4rem;
 	border-radius: 50%;
-	text-align: center;
 	font-size: 2.5rem;
-	padding: .5rem;
 	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/* .progessBox:hover {
-	background-color: rgb(91, 150, 91);
-} */
 .confirmationMessage {
 	text-align: center;
 	font-weight: 600;
@@ -298,6 +296,12 @@ span {
 	#progressContainer {
 		justify-content: center;
 		gap: 5%;
+	}
+
+	.progressBox {
+		width: 6rem;
+		height: 6rem;
+		font-size: 3rem;
 	}
 
 	section {
