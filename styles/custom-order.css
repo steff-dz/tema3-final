@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: #cbbcb1;
+	background-color: #f2efea;
 }
 
 main {
@@ -33,7 +33,7 @@ main > p {
 	overflow-x: hidden;
 	line-height: 1.3em;
 	color: black;
-	background-color: #f2efea;
+	/* background-color: #cbbcb1; */
 	border-radius: 10px;
 }
 
@@ -41,12 +41,13 @@ form {
 	gap: 10px;
 	display: flex;
 	position: absolute;
-	top: 5rem;
+	/* top: 5rem; */
+	top: 15rem;
 	right: 100vw;
 	height: 90vh;
 	width: 100%;
-
 	overflow-x: hidden;
+	/* z-index: 9; */
 }
 
 section {
@@ -71,8 +72,9 @@ section {
 	}
 
 	100% {
-		margin: 6% 10%;
+		margin: auto 10%;
 		right: 0vw;
+		top: 1%;
 	}
 }
 
@@ -155,7 +157,7 @@ span {
 	font-size: 2.5rem;
 	position: absolute;
 	top: -8%;
-	left: 17%;
+	left: 15%;
 	animation-duration: .3s;
 	animation-delay: .2s;
 	animation-fill-mode: forwards;
@@ -199,6 +201,7 @@ span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 3.5%;
 }
 
 .confirmationMessage {
@@ -322,8 +325,8 @@ span {
 
 	.fa-hammer {
 		font-size: 3.5rem;
-		top: -25%;
-		left: 19%;
+		top: -30%;
+		left: 17%;
 	}
 
 	#messageBox {
@@ -338,7 +341,7 @@ span {
 
 		100% {
 			/* margin: 5.5% 10%; */
-			margin: 2% 28%;
+			margin: -5rem 28%;
 			right: 0vw;
 		}
 	}
