@@ -1,10 +1,12 @@
 body {
 	margin: 0;
 	background-color: #cbc1b1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
 	/* background-image: url(https://images.pexels.com/photos/301717/pexels-photo-301717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	background-repeat: no-repeat;
-    background-size: cover;
-	height: 100vh; */
+	background-size: cover; */
 }
 
 main {
@@ -79,27 +81,15 @@ section {
 	/* margin-top: 5.5%; */
 }
 
-@keyframes slideFormPage {
-	0% {
-		transform: translateX(200px);
-	}
-
-	100% {
-		margin: auto 10%;
-		right: 0vw;
-		top: 2%;
-	}
-}
-
 #formPageOne label,
 #formPageTwo label {
 	font-weight: 600;
 	font-size: 1.5rem;
 	text-align: left;
 	flex: 5 0 100%;
-	margin-left: 15px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-left: 1.5rem;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
 }
 
 input {
@@ -154,10 +144,6 @@ span {
 	border-radius: 50%;
 }
 
-/* .priceContainer:hover input ~ span {
-	background-color: rgb(153, 152, 152);
-} */
-
 .priceContainer input:checked ~ span {
 	background-color: lightgreen;
 }
@@ -183,21 +169,20 @@ span {
 	animation-fill-mode: forwards;
 }
 
-@keyframes hammerDown {
-	100% {
-		transform: translateX(12px) translateY(5px) rotate(40deg);
-	}
-}
-
-@keyframes hammerUp {
-	100% {
-		transform: translateX(-0) translateY(0) rotate(0deg);
-	}
-}
-
 button {
 	width: 55%;
 	padding: .3em;
+	background-color: #af6b58;
+	border: none;
+	border-radius: 5rem;
+	letter-spacing: .1rem;
+	font-weight: 600;
+	box-shadow: 6px 5px 10px 3px rgba(0, 0, 0, 0.54);
+	outline: none;
+}
+
+button:hover {
+	background-color: #9b5d4c;
 }
 
 #progressContainer {
@@ -244,6 +229,31 @@ button {
 	list-style-type: none;
 	margin: 0;
 	padding: .5rem;
+}
+
+/* START OF KEY FRAMES------------------------------------------------------ */
+@keyframes slideFormPage {
+	0% {
+		transform: translateX(200px);
+	}
+
+	100% {
+		margin: auto 10%;
+		right: 0vw;
+		top: 2%;
+	}
+}
+
+@keyframes hammerDown {
+	100% {
+		transform: translateX(12px) translateY(5px) rotate(40deg);
+	}
+}
+
+@keyframes hammerUp {
+	100% {
+		transform: translateX(-0) translateY(0) rotate(0deg);
+	}
 }
 
 /* START OF MEDIA QUERIES-------------------------------------------------- */
