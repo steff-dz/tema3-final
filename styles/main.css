@@ -1,10 +1,3 @@
-/* COLOR IDEAS:
-DARK GREEN: #556052
-DARK ORANGY: #AF6B58
-BEIGEY: #CBBCB1
-OFFWHITEY: #F2EFEA 
-YELLOW: #E79E45'*/
-
 * {
 	box-sizing: border-box;
 }
@@ -13,5 +6,3 @@ html {
 	font-size: 62.5%;
 	font-family: 'Lato', sans-serif;
 }
-
-/*  */
