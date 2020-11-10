@@ -53,7 +53,9 @@ progressBoxes[1].addEventListener('click', returnPageTwo);
 function enterForm() {
 	main.style.display = 'none';
 	progressContainer.style.display = 'flex';
-	progressContainer.children[0].style.backgroundColor = '#E79E45';
+	progressContainer.children[0].style.background =
+		'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
+	//progressContainer.children[0].style.backgroundColor = '';
 
 	liftHammer();
 
@@ -63,12 +65,14 @@ function enterForm() {
 	sections[0].style.top = '5rem';
 	sections[0].style.right = '-5rem';
 	sections[0].style.animationName = 'slideFormPage';
+	buttons[1].style.transform = 'rotate(-5deg)';
 }
 
 //This is the function to bring in the second page.
 function secondPage() {
 	sections[0].style.visibility = 'hidden';
-	progressContainer.children[1].style.backgroundColor = ' #E79E45';
+	progressContainer.children[1].style.background =
+		'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
 
 	liftHammer();
 
@@ -78,14 +82,26 @@ function secondPage() {
 	sections[1].style.right = '-5rem';
 
 	sections[1].style.animationName = 'slideFormPage';
+	console.log(document.body.clientWidth);
+	if (document.body.clientWidth < 1423) {
+		buttons[2].style.transform = 'translateY(5px)rotate(5deg)';
+	} else {
+		buttons[2].style.transform = 'translateY(15px)rotate(5deg)';
+	}
 }
 
 //function for the third form page
 function thirdPage() {
 	sections[1].style.visibility = 'hidden';
-	progressContainer.children[2].style.backgroundColor = '#E79E45';
+	progressContainer.children[2].style.background =
+		'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
 
 	liftHammer();
+	if (document.body.clientWidth < 1423) {
+		hammers[3].style.top = '10px';
+	} else {
+		hammers[3].style.top = '0';
+	}
 
 	sections[2].style.visibility = 'visible';
 	sections[2].style.position = 'absolute';
@@ -123,6 +139,17 @@ function dropHammer(cb) {
 	for (hammer of hammers) {
 		hammer.style.animationName = 'hammerDown';
 	}
+
+	for (button of buttons) {
+		if (button.style.animationName == false) {
+			button.style.animationName = 'animateBtn';
+		} else if (button.style.animationName === 'animateBtn') {
+			button.style.animationName = 'animateBtn2';
+		} else if (button.style.animationName === 'animateBtn2') {
+			button.style.animationName = 'animateBtn3';
+		}
+	}
+
 	return setTimeout(cb, 800);
 }
 
@@ -134,7 +161,6 @@ function liftHammer() {
 }
 
 function returnPageOne() {
-	console.log('button1');
 	if (sections[0].style.visibility === 'hidden') {
 		sections[1].style.visibility = 'hidden';
 		sections[2].style.visibility = 'hidden';
