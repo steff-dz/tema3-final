@@ -99,8 +99,10 @@ function thirdPage() {
 	liftHammer();
 	if (document.body.clientWidth < 1423) {
 		hammers[3].style.top = '10px';
+		buttons[3].style.transform = 'translateY(15px)';
 	} else {
 		hammers[3].style.top = '0';
+		buttons[3].style.transform = 'translateY(25px)';
 	}
 
 	sections[2].style.visibility = 'visible';
@@ -147,6 +149,8 @@ function dropHammer(cb) {
 			button.style.animationName = 'animateBtn2';
 		} else if (button.style.animationName === 'animateBtn2') {
 			button.style.animationName = 'animateBtn3';
+		} else if (button.style.animationName === 'animateBtn3') {
+			button.style.animationName = 'animateBtn4';
 		}
 	}
 

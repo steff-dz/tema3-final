@@ -310,6 +310,19 @@ button:hover {
 	}
 }
 
+@keyframes animateBtn4 {
+	0% {
+		transform: translateY(15px);
+	}
+
+	50% {
+		transform: translateY(20px);
+	}
+
+	100% {
+		transform: translateY(15px);
+	}
+}
 /* START OF MEDIA QUERIES-------------------------------------------------- */
 
 @media only screen and (min-width: 360px) {
@@ -492,6 +505,20 @@ button:hover {
 
 		100% {
 			transform: translateY(25px) rotate(0deg);
+		}
+	}
+
+	@keyframes animateBtn4 {
+		0% {
+			transform: translateY(25px);
+		}
+
+		50% {
+			transform: translateY(30px);
+		}
+
+		100% {
+			transform: translateY(25px);
 		}
 	}
 }
