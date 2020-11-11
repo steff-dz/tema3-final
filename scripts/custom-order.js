@@ -160,7 +160,7 @@ function returnPageOne() {
 	if (sections[0].style.visibility === 'hidden') {
 		sections[1].style.visibility = 'hidden';
 		sections[2].style.visibility = 'hidden';
-		sections[0].style.animationName = 'animateReturn';
+		// sections[0].style.animationName = 'animateReturn';
 		sections[0].style.visibility = 'visible';
 	}
 }

@@ -329,23 +329,18 @@ button:hover {
 	}
 }
 
-@keyframes animateReturn {
+/* @keyframes animateReturn {
 	0% {
 		opacity: .1;
 		margin: -3rem 28%;
 		right: 0vw;
 	}
-
-	/* 50% {
-		opacity: .5;
-	} */
-
 	100% {
 		opacity: 1;
 		margin: -3rem 28%;
 		right: 0vw;
 	}
-}
+} */
 /* START OF MEDIA QUERIES-------------------------------------------------- */
 
 @media only screen and (min-width: 360px) {
