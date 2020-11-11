@@ -46,7 +46,6 @@ buttons[3].addEventListener('click', function(event) {
 //BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR
 progressBoxes[0].addEventListener('click', returnPageOne);
 progressBoxes[1].addEventListener('click', returnPageTwo);
-
 //BELOW ARE ALL MY FUNCTIONS-------------------------------------------------------------------
 
 //This function removes the initial elements, calls the progressbar function, pulls in the first section/first form page.
@@ -60,6 +59,8 @@ function enterForm() {
 	liftHammer();
 
 	form.style.right = '0';
+	form.style.top = '0';
+
 	sections[0].style.visibility = 'visible';
 	sections[0].style.animationName = 'slideFormPage';
 	buttons[1].style.transform = 'rotate(-5deg)';
@@ -75,7 +76,7 @@ function secondPage() {
 
 	sections[1].style.visibility = 'visible';
 	sections[1].style.animationName = 'slideFormPage';
-	console.log(document.body.clientWidth);
+
 	if (document.body.clientWidth < 1423) {
 		buttons[2].style.transform = 'translateY(5px)rotate(5deg)';
 	} else {
@@ -141,6 +142,7 @@ function dropHammer(cb) {
 			button.style.animationName = 'animateBtn3';
 		} else if (button.style.animationName === 'animateBtn3') {
 			button.style.animationName = 'animateBtn4';
+			button.style.animationDuration = '.7s';
 		}
 	}
 
@@ -158,6 +160,7 @@ function returnPageOne() {
 	if (sections[0].style.visibility === 'hidden') {
 		sections[1].style.visibility = 'hidden';
 		sections[2].style.visibility = 'hidden';
+		sections[0].style.animationName = 'animateReturn';
 		sections[0].style.visibility = 'visible';
 	}
 }

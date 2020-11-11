@@ -38,7 +38,7 @@ main > p {
 	overflow-x: hidden;
 	line-height: 1.3em;
 	color: black;
-	background-color: #eee;
+	background-color: white;
 	box-shadow: 1px 3px 11px 5px rgba(0, 0, 0, 0.54);
 }
 
@@ -48,9 +48,10 @@ form {
 	position: absolute;
 	top: 15rem;
 	right: 100vw;
-	height: 90vh;
+	height: 100vh;
 	width: 100%;
 	overflow-x: hidden;
+	margin: 0;
 }
 
 section {
@@ -67,9 +68,8 @@ section {
 	animation-timing-function: ease-in-out;
 	background-color: white;
 	box-shadow: 1px 3px 11px 5px rgba(0, 0, 0, 0.54);
-
 	position: absolute;
-	top: 5rem;
+	top: 20vh;
 	right: -5rem;
 }
 
@@ -135,10 +135,11 @@ span {
 	margin: 2px;
 	background-color: lightgrey;
 	border-radius: 50%;
+	border: 1px solid black;
 }
 
 .priceContainer input:checked ~ span {
-	background-color: lightgreen;
+	background-color: #333;
 }
 
 .buttonContainer {
@@ -192,9 +193,10 @@ button:hover {
 	align-items: center;
 	justify-content: space-around;
 	z-index: 10;
-	margin-top: 1rem;
 	margin-bottom: 0;
 	display: none;
+	height: fit-content;
+	position: sticky;
 }
 
 .progressBox {
@@ -205,13 +207,13 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 3.5%;
+	margin: 1%;
 	background-color: #eee;
-	/* background: radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%); */
+	bordeR: 2px solid #333;
 }
 
 .progressBox:hover {
-	opacity: .7;
+	opacity: .6;
 }
 
 .confirmationMessage {
@@ -237,13 +239,13 @@ button:hover {
 /* START OF KEY FRAMES------------------------------------------------------ */
 @keyframes slideFormPage {
 	0% {
-		transform: translateX(200px) translate(-50px);
+		transform: translate(-50px);
 	}
 
 	100% {
 		margin: auto 10%;
 		right: 0vw;
-		top: 2%;
+		/* top: 2%; */
 	}
 }
 
@@ -327,13 +329,26 @@ button:hover {
 	}
 }
 
+@keyframes animateReturn {
+	0% {
+		opacity: .1;
+		margin: -3rem 28%;
+		right: 0vw;
+	}
+
+	/* 50% {
+		opacity: .5;
+	} */
+
+	100% {
+		opacity: 1;
+		margin: -3rem 28%;
+		right: 0vw;
+	}
+}
 /* START OF MEDIA QUERIES-------------------------------------------------- */
 
 @media only screen and (min-width: 360px) {
-	section {
-		margin-top: 8%;
-	}
-
 	button {
 		font-size: 1.8rem;
 	}
@@ -429,6 +444,7 @@ button:hover {
 		margin-top: 2%;
 		padding: 3rem;
 		width: 45vw;
+		top: 30vh;
 	}
 
 	.buttonContainer {
@@ -515,14 +531,17 @@ button:hover {
 	@keyframes animateBtn4 {
 		0% {
 			transform: translateY(25px);
+			width: 42%;
 		}
 
 		50% {
 			transform: translateY(30px);
+			width: 29%;
 		}
 
 		100% {
-			transform: translateY(25px);
+			transform: translateY(25px) rotate(360deg);
+			width: 15%;
 		}
 	}
 }
