@@ -1,8 +1,7 @@
 body {
 	margin: 0;
-	background-color: #c8bca6;
-	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-color: #c8bca6; */
+	background-color: #eee;
 	height: 100vh;
 }
 
@@ -66,8 +65,12 @@ section {
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
-	background-color: #eee;
+	background-color: white;
 	box-shadow: 1px 3px 11px 5px rgba(0, 0, 0, 0.54);
+
+	position: absolute;
+	top: 5rem;
+	right: -5rem;
 }
 
 #formPageOne label,
@@ -85,7 +88,7 @@ input {
 	border: none;
 	border-bottom: 1px solid black;
 	font-size: 1.5rem;
-	background-color: #eee;
+	background-color: white;
 }
 
 input[name="name"] {
@@ -218,11 +221,11 @@ button:hover {
 
 #orderReview {
 	border: 1px solid black;
-	width: 80vw;
+	width: 50vw;
 	margin: 0 auto;
 	font-size: 1.5rem;
-	line-height: 2rem;
-	background-color: #eee;
+	line-height: 2.3rem;
+	background-color: white;
 }
 
 #orderReview ul {
@@ -234,7 +237,7 @@ button:hover {
 /* START OF KEY FRAMES------------------------------------------------------ */
 @keyframes slideFormPage {
 	0% {
-		transform: translateX(200px);
+		transform: translateX(200px) translate(-50px);
 	}
 
 	100% {
@@ -323,6 +326,7 @@ button:hover {
 		transform: translateY(15px);
 	}
 }
+
 /* START OF MEDIA QUERIES-------------------------------------------------- */
 
 @media only screen and (min-width: 360px) {
@@ -444,7 +448,7 @@ button:hover {
 
 	@keyframes slideFormPage {
 		0% {
-			transform: translateX(200px);
+			transform: translateX(200px) translateY(-50px);
 		}
 
 		100% {

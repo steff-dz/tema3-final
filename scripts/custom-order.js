@@ -61,9 +61,6 @@ function enterForm() {
 
 	form.style.right = '0';
 	sections[0].style.visibility = 'visible';
-	sections[0].style.position = 'absolute';
-	sections[0].style.top = '5rem';
-	sections[0].style.right = '-5rem';
 	sections[0].style.animationName = 'slideFormPage';
 	buttons[1].style.transform = 'rotate(-5deg)';
 }
@@ -77,10 +74,6 @@ function secondPage() {
 	liftHammer();
 
 	sections[1].style.visibility = 'visible';
-	sections[1].style.position = 'absolute';
-	sections[1].style.top = '5rem';
-	sections[1].style.right = '-5rem';
-
 	sections[1].style.animationName = 'slideFormPage';
 	console.log(document.body.clientWidth);
 	if (document.body.clientWidth < 1423) {
@@ -106,9 +99,6 @@ function thirdPage() {
 	}
 
 	sections[2].style.visibility = 'visible';
-	sections[2].style.position = 'absolute';
-	sections[2].style.top = '5rem';
-	sections[2].style.right = '-5rem';
 
 	sections[2].style.animationName = 'slideFormPage';
 }
