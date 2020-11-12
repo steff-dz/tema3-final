@@ -12,7 +12,7 @@
 
 @keyframes hammerDown {
 	100% {
-		transform: translateX(12px) translateY(5px) rotate(40deg);
+		transform: translateX(10px) translateY(10px) rotate(40deg);
 	}
 }
 
@@ -24,7 +24,7 @@
 
 @keyframes animateBtn {
 	0% {
-		padding: .3em;
+		padding: .5rem;
 	}
 
 	25% {

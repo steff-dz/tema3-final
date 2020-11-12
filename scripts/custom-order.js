@@ -88,16 +88,16 @@ function thirdPage() {
 
 	liftHammer();
 	if (document.body.clientWidth < 1423) {
-		hammers[3].style.top = '10px';
 		buttons[3].style.transform = 'translateY(15px)';
 	} else {
-		hammers[3].style.top = '0';
 		buttons[3].style.transform = 'translateY(25px)';
 	}
 
 	sections[2].style.visibility = 'visible';
 
 	sections[2].style.animationName = 'slideFormPage';
+
+	// hammers[3].style.transform = 'translateY(10px)';
 }
 
 //Below is the function that prints the order review page/final page
@@ -138,7 +138,7 @@ function dropHammer(cb) {
 			button.style.animationName = 'animateBtn3';
 		} else if (button.style.animationName === 'animateBtn3') {
 			button.style.animationName = 'animateBtn4';
-			button.style.animationDuration = '.7s';
+			button.style.transform = '.7s';
 		}
 	}
 
@@ -158,6 +158,9 @@ function returnPageOne() {
 		sections[2].style.visibility = 'hidden';
 		// sections[0].style.animationName = 'animateReturn';
 		sections[0].style.visibility = 'visible';
+		progressBoxes[1].style.background = '#eee';
+		progressBoxes[2].style.background = '#eee';
+		buttons[1].style.animationName = 'animateBtn';
 	}
 }
 

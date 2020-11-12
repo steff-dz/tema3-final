@@ -1,20 +1,13 @@
-@media only screen and (min-width: 360px) {
+/* @media only screen and (min-width: 360px) {
 	button {
 		font-size: 1.8rem;
 	}
-}
+} */
 
-@media only screen and (min-width: 375px) {
-	.fa-hammer {
-		top: -5%;
-	}
-}
+/* @media only screen and (min-width: 375px) {
+} */
 
 @media only screen and (min-width: 411px) {
-	.fa-hammer {
-		font-size: 3rem;
-		top: -8%;
-	}
 	input,
 	select {
 		padding: .4rem;
@@ -40,13 +33,13 @@
 	button {
 		font-size: 2rem;
 	}
+
+	.fa-hammer {
+		top: -3%;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
-	.fa-hammer {
-		top: 10%;
-	}
-
 	input,
 	select {
 		padding: 1rem;
@@ -75,10 +68,6 @@
 		font-size: 2rem;
 	}
 
-	button {
-		padding: 1rem;
-	}
-
 	#progressContainer {
 		justify-content: center;
 		gap: 5%;
@@ -97,16 +86,10 @@
 		top: 30vh;
 	}
 
-	.buttonContainer {
-		margin-top: 4rem;
-	}
-
 	.fa-hammer {
-		font-size: 3.5rem;
-		top: -30%;
-		left: 20%;
+		font-size: 4rem;
+		top: 5%;
 	}
-
 	#messageBox {
 		width: 80rem;
 		font-size: 1.5rem;

@@ -147,30 +147,30 @@ span {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	height: 10vh;
-	margin: .5rem;
-	margin-top: 1.5rem;
+	height: 20vh;
+	margin-top: 1rem;
 }
 
 .fa-hammer {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	position: absolute;
-	top: -8%;
-	left: 15%;
+	top: 8%;
+	left: 20%;
 	animation-duration: .1s;
 	animation-delay: .2s;
 	animation-fill-mode: forwards;
 	transform: "";
+	z-index: 8;
 }
-
 #lastHammer {
-	transform: "";
+	top: 20%;
 }
 
 button {
 	width: 55%;
-	padding: .3em;
+	font-size: 1.8rem;
+	height: fit-content;
+	padding: 1rem;
 	background-color: #824533;
 	color: #eee;
 	border: none;
@@ -182,6 +182,7 @@ button {
 	animation-duration: .2s;
 	animation-fill-mode: forwards;
 	animation-delay: .3s;
+	align-self: center;
 }
 
 button:hover {
