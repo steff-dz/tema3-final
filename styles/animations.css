@@ -22,7 +22,7 @@
 	}
 }
 
-@keyframes animateBtn {
+@keyframes animateBtn0 {
 	0% {
 		padding: .5rem;
 	}
@@ -40,7 +40,7 @@
 	}
 }
 
-@keyframes animateBtn2 {
+@keyframes animateBtn1 {
 	0% {
 		padding: .3em;
 	}
@@ -58,7 +58,7 @@
 	}
 }
 
-@keyframes animateBtn3 {
+@keyframes animateBtn2 {
 	0% {
 		padding: .3em;
 	}
@@ -76,7 +76,7 @@
 	}
 }
 
-@keyframes animateBtn4 {
+@keyframes animateBtn3 {
 	0% {
 		transform: translateY(15px);
 	}

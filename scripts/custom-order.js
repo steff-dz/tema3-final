@@ -26,21 +26,25 @@ const messageBox = document.querySelector('#messageBox');
 //BELOW ARE MY EVENT LISTENERS---------------------------------------------------------
 buttons[0].addEventListener('click', function() {
 	dropHammer(enterForm);
+	buttons[0].style.animationName = 'animateBtn0';
 });
 
 buttons[1].addEventListener('click', function(event) {
 	event.preventDefault();
 	dropHammer(secondPage);
+	buttons[1].style.animationName = 'animateBtn1';
 });
 
 buttons[2].addEventListener('click', function(event) {
 	event.preventDefault();
 	dropHammer(thirdPage);
+	buttons[2].style.animationName = 'animateBtn2';
 });
 
 buttons[3].addEventListener('click', function(event) {
 	event.preventDefault();
 	dropHammer(finalPage);
+	buttons[3].style.animationName = 'animateBtn3';
 });
 
 //BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR-----------------------------------------------------------------
@@ -129,18 +133,18 @@ function dropHammer(cb) {
 		hammer.style.animationName = 'hammerDown';
 	}
 
-	for (button of buttons) {
-		if (button.style.animationName == false) {
-			button.style.animationName = 'animateBtn';
-		} else if (button.style.animationName === 'animateBtn') {
-			button.style.animationName = 'animateBtn2';
-		} else if (button.style.animationName === 'animateBtn2') {
-			button.style.animationName = 'animateBtn3';
-		} else if (button.style.animationName === 'animateBtn3') {
-			button.style.animationName = 'animateBtn4';
-			button.style.transform = '.7s';
-		}
-	}
+	// for (button of buttons) {
+	// 	if (button.style.animationName == false) {
+	// 		button.style.animationName = 'animateBtn';
+	// 	} else if (button.style.animationName === 'animateBtn') {
+	// 		button.style.animationName = 'animateBtn2';
+	// 	} else if (button.style.animationName === 'animateBtn2') {
+	// 		button.style.animationName = 'animateBtn3';
+	// 	} else if (button.style.animationName === 'animateBtn3') {
+	// 		button.style.animationName = 'animateBtn4';
+	// 		button.style.transform = '.7s';
+	// 	}
+	// }
 
 	return setTimeout(cb, 800);
 }
@@ -160,7 +164,7 @@ function returnPageOne() {
 		sections[0].style.visibility = 'visible';
 		progressBoxes[1].style.background = '#eee';
 		progressBoxes[2].style.background = '#eee';
-		buttons[1].style.animationName = 'animateBtn';
+		//buttons[1].style.animationName = 'animateBtn';
 	}
 }
 
