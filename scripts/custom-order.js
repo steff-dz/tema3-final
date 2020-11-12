@@ -164,7 +164,7 @@ function returnPageOne() {
 		sections[0].style.visibility = 'visible';
 		progressBoxes[1].style.background = '#eee';
 		progressBoxes[2].style.background = '#eee';
-		//buttons[1].style.animationName = 'animateBtn';
+		buttons[1].style.animationName = '';
 	}
 }
 
@@ -173,5 +173,7 @@ function returnPageTwo() {
 	if (sections[1].style.visibility === 'hidden') {
 		sections[2].style.visibility = 'hidden';
 		sections[1].style.visibility = 'visible';
+		progressBoxes[2].style.background = '#eee';
+		buttons[2].style.animationName = '';
 	}
 }
