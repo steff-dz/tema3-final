@@ -43,18 +43,16 @@ buttons[3].addEventListener('click', function(event) {
 	dropHammer(finalPage);
 });
 
-//BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR
+//BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR-----------------------------------------------------------------
 progressBoxes[0].addEventListener('click', returnPageOne);
 progressBoxes[1].addEventListener('click', returnPageTwo);
 //BELOW ARE ALL MY FUNCTIONS-------------------------------------------------------------------
 
-//This function removes the initial elements, calls the progressbar function, pulls in the first section/first form page.
+//This function removes the initial elements, colors in the first progress box, then initiates form sections for the first page.
 function enterForm() {
 	main.style.display = 'none';
 	progressContainer.style.display = 'flex';
-	progressContainer.children[0].style.background =
-		'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
-	//progressContainer.children[0].style.backgroundColor = '';
+	progressBoxes[0].style.background = 'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
 
 	liftHammer();
 
@@ -69,8 +67,7 @@ function enterForm() {
 //This is the function to bring in the second page.
 function secondPage() {
 	sections[0].style.visibility = 'hidden';
-	progressContainer.children[1].style.background =
-		'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
+	progressBoxes[1].style.background = 'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
 
 	liftHammer();
 
@@ -87,8 +84,7 @@ function secondPage() {
 //function for the third form page
 function thirdPage() {
 	sections[1].style.visibility = 'hidden';
-	progressContainer.children[2].style.background =
-		'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
+	progressBoxes[2].style.background = 'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
 
 	liftHammer();
 	if (document.body.clientWidth < 1423) {

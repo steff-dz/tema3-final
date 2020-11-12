@@ -1,0 +1,91 @@
+@keyframes slideFormPage {
+	0% {
+		transform: translate(-50px);
+	}
+
+	100% {
+		margin: auto 10%;
+		right: 0vw;
+		/* top: 2%; */
+	}
+}
+
+@keyframes hammerDown {
+	100% {
+		transform: translateX(12px) translateY(5px) rotate(40deg);
+	}
+}
+
+@keyframes hammerUp {
+	100% {
+		transform: translateX(-0) translateY(0) rotate(0deg);
+	}
+}
+
+@keyframes animateBtn {
+	0% {
+		padding: .3em;
+	}
+
+	25% {
+		padding: .8em;
+	}
+
+	50% {
+		padding: .3em;
+	}
+
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+
+@keyframes animateBtn2 {
+	0% {
+		padding: .3em;
+	}
+
+	25% {
+		padding: .8em;
+	}
+
+	50% {
+		padding: .3em;
+	}
+
+	100% {
+		transform: translateY(5px) rotate(5deg);
+	}
+}
+
+@keyframes animateBtn3 {
+	0% {
+		padding: .3em;
+	}
+
+	25% {
+		padding: .8em;
+	}
+
+	50% {
+		padding: .3em;
+	}
+
+	100% {
+		transform: translateY(15px) rotate(0deg);
+	}
+}
+
+@keyframes animateBtn4 {
+	0% {
+		transform: translateY(15px);
+	}
+
+	50% {
+		transform: translateY(20px);
+	}
+
+	100% {
+		transform: translateY(15px);
+	}
+}
