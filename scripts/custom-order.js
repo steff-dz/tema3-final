@@ -77,6 +77,21 @@ spans.forEach((span) => {
 //BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR-----------------------------------------------------------------
 progressBoxes[0].addEventListener('click', returnPageOne);
 progressBoxes[1].addEventListener('click', returnPageTwo);
+
+progressBoxes.forEach((box) => {
+	box.addEventListener('keydown', function(event) {
+		if (event.keyCode === 13) {
+			console.log(event.target.innerHTML);
+			if (event.target.innerHTML === '1') {
+				returnPageOne();
+			} else if (event.target.innerHTML === '2') {
+				returnPageTwo();
+			} else {
+				console.log('merp');
+			}
+		}
+	});
+});
 //BELOW ARE ALL MY FUNCTIONS-------------------------------------------------------------------
 
 //This function removes the initial elements, colors in the first progress box, then initiates form sections for the first page.
@@ -111,7 +126,6 @@ function secondPage() {
 		buttons[2].style.transform = 'translateY(15px)rotate(5deg)';
 	}
 
-	console.log(infoIcon);
 	infoIcon.addEventListener('click', toggleInfo);
 }
 
