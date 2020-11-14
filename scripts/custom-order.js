@@ -25,13 +25,12 @@ const messageBox = document.querySelector('#messageBox');
 
 //BELOW ARE MY EVENT LISTENERS---------------------------------------------------------
 
-buttons[0].addEventListener('keydown', function(event) {
-	if (event.keyCode === 9) {
-		event.preventDefault();
-		let key = event.keyCode;
-		console.log(key);
-		this.style.backgroundColor = 'blue';
-	}
+buttons.forEach((button) => {
+	button.addEventListener('keyup', function(event) {
+		if (event.keyCode === 9) {
+			this.style.border = '3px solid black';
+		}
+	});
 });
 
 buttons[0].addEventListener('click', function() {
@@ -188,11 +187,9 @@ function returnPageTwo() {
 	}
 }
 
-function onTab(event) {
-	event.preventDefault;
-	let key = event.key || event.keyCode;
-	if (key === 9) {
-		buttons.stye.backgroundColor = 'blue';
-	}
-}
-//alert('stuff');
+// function onTab(event) {
+// 	event.preventDefault;
+// 	if (event.key === 9) {
+// 		buttons.stye.border = '1px solid black';
+// 	}
+// }
