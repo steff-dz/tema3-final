@@ -29,7 +29,7 @@ main h1 {
 }
 
 main > p {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	border: 1px solid black;
 	padding: .5em;
 	width: 100%;
@@ -178,11 +178,11 @@ button {
 	letter-spacing: .1rem;
 	font-weight: 600;
 	box-shadow: 6px 5px 10px 3px rgba(0, 0, 0, 0.54);
-	outline: none;
 	animation-duration: .2s;
 	animation-fill-mode: forwards;
 	animation-delay: .3s;
 	align-self: center;
+	outline: none;
 }
 
 button:hover {

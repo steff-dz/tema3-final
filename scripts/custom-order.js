@@ -24,6 +24,16 @@ const finishType = document.querySelector('#finishType');
 const messageBox = document.querySelector('#messageBox');
 
 //BELOW ARE MY EVENT LISTENERS---------------------------------------------------------
+
+buttons[0].addEventListener('keydown', function(event) {
+	if (event.keyCode === 9) {
+		event.preventDefault();
+		let key = event.keyCode;
+		console.log(key);
+		this.style.backgroundColor = 'blue';
+	}
+});
+
 buttons[0].addEventListener('click', function() {
 	dropHammer(enterForm);
 	buttons[0].style.animationName = 'animateBtn0';
@@ -177,3 +187,12 @@ function returnPageTwo() {
 		buttons[2].style.animationName = '';
 	}
 }
+
+function onTab(event) {
+	event.preventDefault;
+	let key = event.key || event.keyCode;
+	if (key === 9) {
+		buttons.stye.backgroundColor = 'blue';
+	}
+}
+//alert('stuff');
