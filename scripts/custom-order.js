@@ -19,6 +19,7 @@ const productType = document.querySelector('#productType');
 const materielType = document.querySelector('#materielType');
 const woodType = document.querySelector('#woodType');
 const finishType = document.querySelector('#finishType');
+const infoIcon = document.querySelector('#infoIcon');
 
 //INPUT VARIABLES FOR THIRD PAGE---------------------------------------------------------
 const messageBox = document.querySelector('#messageBox');
@@ -109,6 +110,9 @@ function secondPage() {
 	} else {
 		buttons[2].style.transform = 'translateY(15px)rotate(5deg)';
 	}
+
+	console.log(infoIcon);
+	infoIcon.addEventListener('click', toggleInfo);
 }
 
 //function for the third form page
@@ -155,20 +159,6 @@ function dropHammer(cb) {
 	for (hammer of hammers) {
 		hammer.style.animationName = 'hammerDown';
 	}
-
-	// for (button of buttons) {
-	// 	if (button.style.animationName == false) {
-	// 		button.style.animationName = 'animateBtn';
-	// 	} else if (button.style.animationName === 'animateBtn') {
-	// 		button.style.animationName = 'animateBtn2';
-	// 	} else if (button.style.animationName === 'animateBtn2') {
-	// 		button.style.animationName = 'animateBtn3';
-	// 	} else if (button.style.animationName === 'animateBtn3') {
-	// 		button.style.animationName = 'animateBtn4';
-	// 		button.style.transform = '.7s';
-	// 	}
-	// }
-
 	return setTimeout(cb, 800);
 }
 
@@ -201,9 +191,8 @@ function returnPageTwo() {
 	}
 }
 
-// function onTab(event) {
-// 	event.preventDefault;
-// 	if (event.key === 9) {
-// 		buttons.stye.border = '1px solid black';
-// 	}
-// }
+function toggleInfo() {
+	console.log('hello');
+	let infoSheet = document.querySelector('#infoSheet');
+	infoSheet.style.visibility = 'visible';
+}
