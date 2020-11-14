@@ -34,8 +34,16 @@
 		font-size: 2rem;
 	}
 
+	section {
+		animation-timing-function: ease-in-out;
+	}
 	.fa-hammer {
-		top: -3%;
+		font-size: 4rem;
+		top: 20%;
+	}
+
+	#lastHammer {
+		top: 25%;
 	}
 }
 
@@ -43,6 +51,14 @@
 	input,
 	select {
 		padding: 1rem;
+	}
+
+	main p {
+		font-size: 3rem;
+	}
+
+	.fa-hammer {
+		top: 5%;
 	}
 }
 
@@ -86,10 +102,6 @@
 		top: 30vh;
 	}
 
-	.fa-hammer {
-		font-size: 4rem;
-		top: 5%;
-	}
 	#messageBox {
 		width: 80rem;
 		font-size: 1.5rem;
