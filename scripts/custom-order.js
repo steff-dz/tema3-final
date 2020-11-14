@@ -22,6 +22,13 @@ const finishType = document.querySelector('#finishType');
 
 //INPUT VARIABLES FOR THIRD PAGE---------------------------------------------------------
 const messageBox = document.querySelector('#messageBox');
+const spans = document.querySelectorAll('span');
+//const radioInputs = document.querySelectorAll('input[type=radio]');
+const radioInputOne = document.querySelector('#budgetOne');
+const radioInputTwo = document.querySelector('#budgetTwo');
+const radioInputThree = document.querySelector('#budgetThree');
+const radioInputFour = document.querySelector('#budgetFour');
+const radioArray = [ radioInputOne, radioInputTwo, radioInputThree, radioInputFour ];
 
 //BELOW ARE MY EVENT LISTENERS---------------------------------------------------------
 
@@ -54,6 +61,16 @@ buttons[3].addEventListener('click', function(event) {
 	event.preventDefault();
 	dropHammer(finalPage);
 	buttons[3].style.animationName = 'animateBtn3';
+});
+
+spans.forEach((span) => {
+	span.addEventListener('keyup', function(event) {
+		if (event.keyCode === 13) {
+			let budgetID = this.dataset.name;
+			let radioID = radioArray.find((radio) => radio.id === budgetID);
+			radioID.checked = 'true';
+		}
+	});
 });
 
 //BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR-----------------------------------------------------------------
@@ -107,10 +124,7 @@ function thirdPage() {
 	}
 
 	sections[2].style.visibility = 'visible';
-
 	sections[2].style.animationName = 'slideFormPage';
-
-	// hammers[3].style.transform = 'translateY(10px)';
 }
 
 //Below is the function that prints the order review page/final page
