@@ -194,5 +194,9 @@ function returnPageTwo() {
 function toggleInfo() {
 	console.log('hello');
 	let infoSheet = document.querySelector('#infoSheet');
-	infoSheet.style.visibility = 'visible';
+	if (infoSheet.style.visibility == 'visible') {
+		infoSheet.style.visibility = 'hidden';
+	} else {
+		infoSheet.style.visibility = 'visible';
+	}
 }
