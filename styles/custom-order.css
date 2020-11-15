@@ -125,24 +125,34 @@ h2 {
 	color: white;
 	border-radius: 50%;
 	text-align: center;
+	outline: none;
 }
 
-#infoBox:hover {
+#infoIcon:hover {
 	background-color: #9b5d4c;
 }
 
 #infoSheet {
-	font-size: 1.4rem;
-	padding: .5rem;
+	font-size: 4.2vw;
+	padding: 1.5rem;
 	background-color: lightgrey;
 	z-index: 9;
 	position: absolute;
 	top: 10%;
+	left: -1%;
 	width: 90%;
+	height: fit-content;
+	overflow: auto;
+	overflow-x: hidden;
+	margin: .5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-items: flex-end;
 	visibility: hidden;
+	background-color: #464625;
+	color: white;
+	border-radius: 40px 0px 40px 40px;
+	box-shadow: 5px -4px 6px 0px rgba(0, 0, 0, 0.56);
 }
 
 .priceContainer {

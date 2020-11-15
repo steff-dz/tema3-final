@@ -77,6 +77,7 @@ spans.forEach((span) => {
 //BELOW ARE EVENT LISTENERS FOR THE PROGRESS BAR-----------------------------------------------------------------
 progressBoxes[0].addEventListener('click', returnPageOne);
 progressBoxes[1].addEventListener('click', returnPageTwo);
+progressBoxes[2].addEventListener('click', returnPageThree);
 
 progressBoxes.forEach((box) => {
 	box.addEventListener('keydown', function(event) {
@@ -87,7 +88,7 @@ progressBoxes.forEach((box) => {
 			} else if (event.target.innerHTML === '2') {
 				returnPageTwo();
 			} else {
-				console.log('merp');
+				returnPageThree();
 			}
 		}
 	});
@@ -187,7 +188,6 @@ function returnPageOne() {
 	if (sections[0].style.visibility === 'hidden') {
 		sections[1].style.visibility = 'hidden';
 		sections[2].style.visibility = 'hidden';
-		// sections[0].style.animationName = 'animateReturn';
 		sections[0].style.visibility = 'visible';
 		progressBoxes[1].style.background = '#eee';
 		progressBoxes[2].style.background = '#eee';
@@ -202,6 +202,15 @@ function returnPageTwo() {
 		sections[1].style.visibility = 'visible';
 		progressBoxes[2].style.background = '#eee';
 		buttons[2].style.animationName = '';
+	}
+}
+
+function returnPageThree() {
+	if (sections[2].style.visibility === 'hidden') {
+		console.log('boo');
+		sections[0].style.visibility = 'hidden';
+		sections[1].style.visibility = 'hidden';
+		sections[2].style.visibility = 'visible';
 	}
 }
 
