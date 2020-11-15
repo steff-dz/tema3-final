@@ -126,6 +126,7 @@ h2 {
 	border-radius: 50%;
 	text-align: center;
 	outline: none;
+	cursor: pointer;
 }
 
 #infoIcon:hover {
@@ -138,7 +139,6 @@ h2 {
 	background-color: lightgrey;
 	z-index: 9;
 	position: absolute;
-	top: 10%;
 	left: -1%;
 	width: 90%;
 	height: fit-content;
@@ -148,12 +148,24 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-items: flex-end;
-	visibility: hidden;
+	/* visibility: hidden; */
+	opacity: 0;
 	background-color: #464625;
 	color: white;
 	border-radius: 40px 0px 40px 40px;
 	box-shadow: 5px -4px 6px 0px rgba(0, 0, 0, 0.56);
+
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
 }
+
+/* .animateInfoStyle {
+	animation-name: animateInfo;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+} */
 
 .priceContainer {
 	position: relative;

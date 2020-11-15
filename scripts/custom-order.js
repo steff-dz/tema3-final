@@ -217,9 +217,9 @@ function returnPageThree() {
 function toggleInfo() {
 	console.log('hello');
 	let infoSheet = document.querySelector('#infoSheet');
-	if (infoSheet.style.visibility == 'visible') {
-		infoSheet.style.visibility = 'hidden';
+	if (infoSheet.style.animationName === 'animateInfo') {
+		infoSheet.style.animationName = '';
 	} else {
-		infoSheet.style.visibility = 'visible';
+		infoSheet.style.animationName = 'animateInfo';
 	}
 }
