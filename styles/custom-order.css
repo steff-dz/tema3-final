@@ -133,6 +133,9 @@ h2 {
 	background-color: #9b5d4c;
 }
 
+#infoIcon:focus {
+	border: 2px solid black;
+}
 #infoSheet {
 	font-size: 4.2vw;
 	padding: 1.5rem;
@@ -159,13 +162,6 @@ h2 {
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in;
 }
-
-/* .animateInfoStyle {
-	animation-name: animateInfo;
-	animation-duration: .3s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in;
-} */
 
 .priceContainer {
 	position: relative;
@@ -214,17 +210,13 @@ span {
 .fa-hammer {
 	font-size: 3.5rem;
 	position: absolute;
-	top: 8%;
+	top: 10%;
 	left: 20%;
 	animation-duration: .1s;
 	animation-delay: .2s;
 	animation-fill-mode: forwards;
 	transform: "";
 	z-index: 8;
-}
-
-#lastHammer {
-	top: 20%;
 }
 
 button {
@@ -273,11 +265,6 @@ button:hover {
 	background-color: #eee;
 	border: 2px solid #333;
 	outline: none;
-}
-
-.progressBoxTabStyle {
-	border: 3px solid green;
-	border-radius: 50%;
 }
 
 .progressBox:focus {

@@ -31,16 +31,16 @@
     </main>
 
     <div id="progressContainer">
-        <div tabindex="0" class="progressBox">1</div>
-        <div tabindex="0" class="progressBox">2</div>
-        <div tabindex="0" class="progressBox">3</div>
+        <div tabindex="0" role="Display icon for form page 1." class="progressBox">1</div>
+        <div tabindex="0" role="Display icon for form page 2." class="progressBox">2</div>
+        <div tabindex="0"rike="Display icon for form page 3." class="progressBox">3</div>
     </div>
 
     <form action="">
         <!-- IN JS THIS IS SECTIONS[0] -->
         <section id="formPageOne">
             <label for="name">NAME:</label>
-            <input type="text" name="name" id="firstName" placeholder="first name" required>
+            <input type="text" name="name" id="firstName" placeholder="first name">
             <input type="text" name="name" id="lastName" placeholder="last name">                        
      
             <label for="email">EMAIL:</label>
@@ -57,7 +57,7 @@
         <!-- IN JS THIS IS SECTIONS[1] -->
         <section id="formPageTwo">
             <div id="infoContainer">
-                <div tabindex="0"id="infoIcon">i</div>
+                <div tabindex="0" role="Clickable icon to toggle extra information" id="infoIcon">i</div>
                
             </div>
             <div id="infoSheet">
