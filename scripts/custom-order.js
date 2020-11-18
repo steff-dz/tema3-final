@@ -96,7 +96,6 @@ progressBoxes.forEach((box) => {
 });
 //BELOW ARE ALL MY FUNCTIONS-------------------------------------------------------------------
 
-//This function removes the initial elements, colors in the first progress box, then initiates form sections for the first page.
 function enterForm() {
 	main.style.display = 'none';
 	progressContainer.style.display = 'flex';
@@ -122,12 +121,6 @@ function secondPage() {
 	sections[1].style.visibility = 'visible';
 	sections[1].style.animationName = 'slideFormPage';
 
-	// if (document.body.clientWidth < 1423) {
-	// 	buttons[2].style.transform = 'translateY(5px)rotate(5deg)';
-	// } else {
-	// 	buttons[2].style.transform = 'translateY(15px)rotate(5deg)';
-	// }
-
 	infoIcon.addEventListener('click', toggleInfo);
 	infoIcon.addEventListener('keyup', function(event) {
 		if (event.keyCode === 13) {
@@ -142,11 +135,6 @@ function thirdPage() {
 	progressBoxes[2].style.background = 'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
 
 	liftHammer();
-	// if (document.body.clientWidth < 1423) {
-	// 	buttons[3].style.transform = 'translateY(15px)';
-	// } else {
-	// 	buttons[3].style.transform = 'translateY(25px)';
-	// }
 
 	sections[2].style.visibility = 'visible';
 	sections[2].style.animationName = 'slideFormPage';
