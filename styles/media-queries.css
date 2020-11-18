@@ -1,4 +1,8 @@
 @media only screen and (min-width: 411px) {
+	main {
+		width: 80%;
+	}
+
 	input,
 	select {
 		padding: .4rem;
@@ -64,7 +68,7 @@
 	}
 
 	main {
-		padding: 0 25em;
+		width: 60%;
 	}
 
 	main h1 {

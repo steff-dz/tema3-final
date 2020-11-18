@@ -61,6 +61,7 @@ buttons[2].addEventListener('click', function(event) {
 buttons[3].addEventListener('click', function(event) {
 	event.preventDefault();
 	dropHammer(finalPage);
+	buttons[3].style.animationDuration = '.4s';
 	buttons[3].style.animationName = 'animateBtn3';
 });
 
