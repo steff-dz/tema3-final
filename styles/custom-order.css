@@ -9,9 +9,8 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
-	width: 100%;
 }
 
 h1 {
@@ -208,7 +207,8 @@ span {
 }
 
 .fa-hammer {
-	font-size: 3.5rem;
+	/* font-size: 3.5rem; */
+	font-size: 5vh;
 	position: absolute;
 	top: 10%;
 	left: 20%;

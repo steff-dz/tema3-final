@@ -9,22 +9,17 @@
 
 #siteTitle {
 	/* TRY TO MAKE FONT SIZE RESPONSIVE LATER, WILL NEED MEDIA QUERIES */
-	font-size: 1.3rem;
+	font-size: 4.5vw;
 	justify-self: right;
 	align-self: center;
-	padding: 5rem;
+	padding-right: 5%;
 	color: #eee;
 	font-weight: normal;
+	margin: 0;
 }
 
-@media only screen and (min-width: 370px) {
+@media only screen and (min-width: 1024px) {
 	#siteTitle {
-		font-size: 1.5em;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	#siteTitle {
-		font-size: 2.5em;
+		font-size: 3rem;
 	}
 }

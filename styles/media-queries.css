@@ -1,8 +1,4 @@
 @media only screen and (min-width: 411px) {
-	main {
-		width: 80%;
-	}
-
 	input,
 	select {
 		padding: .4rem;
@@ -10,10 +6,6 @@
 
 	#infoSheet {
 		left: 1%;
-	}
-
-	.fa-hammer {
-		font-size: 4rem;
 	}
 }
 
@@ -25,12 +17,15 @@
 }
 
 @media only screen and (min-width: 768px) {
-	html {
-		font-size: 80%;
+	main {
+		height: fit-content;
 	}
 
+	main > h1 {
+		font-size: 4.5rem;
+	}
 	main > p {
-		padding: .8em;
+		font-size: 3rem;
 	}
 
 	button {
@@ -48,13 +43,8 @@
 		padding: 1rem;
 	}
 
-	main p {
-		font-size: 2rem;
-	}
-
 	#infoSheet {
 		top: 12%;
-		/* left: 1%; */
 	}
 
 	#infoSheet p {
