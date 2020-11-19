@@ -30,6 +30,7 @@
 
 	button {
 		font-size: 2rem;
+		padding: 1.5rem;
 	}
 
 	section {
@@ -43,12 +44,29 @@
 		padding: 1rem;
 	}
 
+	#progressContainer {
+		margin-top: 30px;
+		justify-content: center;
+		gap: 100px;
+	}
+
+	.progressBox {
+		width: 6rem;
+		height: 6rem;
+		font-size: 3rem;
+	}
+
 	#infoSheet {
 		top: 12%;
 	}
 
 	#infoSheet p {
 		font-size: 2rem;
+	}
+
+	.fa-hammer {
+		font-size: 4rem;
+		top: 5%;
 	}
 }
 
@@ -75,6 +93,7 @@
 	}
 
 	#progressContainer {
+		margin-top: 0;
 		justify-content: center;
 		gap: 5%;
 	}
