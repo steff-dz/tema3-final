@@ -8,30 +8,29 @@ const buttons = document.querySelectorAll('button');
 const progressContainer = document.querySelector('#progressContainer');
 const progressBoxes = document.querySelectorAll('.progressBox');
 
-//INPUT VARIABLES FOR FIRST FORM PAGE--------------------------------------------------
+//INPUT VARIABLES FOR FIRST FORM PAGE---------------------------------------------------------------------------
 const firstName = document.querySelector('#firstName');
 const lastName = document.querySelector('#lastName');
 const email = document.querySelector('#email');
 const locationInput = document.querySelector('#location');
 
-//INPUT VARIABLES FOR SECOND PAGE-----------------------------------------------------
+//INPUT VARIABLES FOR SECOND PAGE-------------------------------------------------------------------------------
 const productType = document.querySelector('#productType');
 const materielType = document.querySelector('#materielType');
 const woodType = document.querySelector('#woodType');
 const finishType = document.querySelector('#finishType');
 const infoIcon = document.querySelector('#infoIcon');
 
-//INPUT VARIABLES FOR THIRD PAGE---------------------------------------------------------
+//INPUT VARIABLES FOR THIRD PAGE--------------------------------------------------------------------------------
 const messageBox = document.querySelector('#messageBox');
 const spans = document.querySelectorAll('span');
-//const radioInputs = document.querySelectorAll('input[type=radio]');
 const radioInputOne = document.querySelector('#budgetOne');
 const radioInputTwo = document.querySelector('#budgetTwo');
 const radioInputThree = document.querySelector('#budgetThree');
 const radioInputFour = document.querySelector('#budgetFour');
 const radioArray = [ radioInputOne, radioInputTwo, radioInputThree, radioInputFour ];
 
-//BELOW ARE MY EVENT LISTENERS---------------------------------------------------------
+//BELOW ARE MY EVENT LISTENERS------------------------------------------------------------------------------------
 
 buttons.forEach((button) => {
 	button.addEventListener('keyup', function(event) {
@@ -95,7 +94,6 @@ progressBoxes.forEach((box) => {
 	});
 });
 //BELOW ARE ALL MY FUNCTIONS-------------------------------------------------------------------
-
 function enterForm() {
 	main.style.display = 'none';
 	progressContainer.style.display = 'flex';
@@ -111,7 +109,6 @@ function enterForm() {
 	buttons[1].style.transform = 'rotate(-5deg)';
 }
 
-//This is the function to bring in the second page.
 function secondPage() {
 	sections[0].style.visibility = 'hidden';
 	progressBoxes[1].style.background = 'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
@@ -129,7 +126,6 @@ function secondPage() {
 	});
 }
 
-//function for the third form page
 function thirdPage() {
 	sections[1].style.visibility = 'hidden';
 	progressBoxes[2].style.background = 'radial-gradient(circle, rgba(201, 149, 67, 1) 48%, rgba(148, 89, 55, 1) 90%)';
@@ -140,7 +136,6 @@ function thirdPage() {
 	sections[2].style.animationName = 'slideFormPage';
 }
 
-//Below is the function that prints the order review page/final page
 function finalPage() {
 	form.style.display = 'none';
 	progressContainer.style.display = 'none';
@@ -213,7 +208,6 @@ function returnPageThree() {
 }
 
 function toggleInfo() {
-	console.log('hello');
 	let infoSheet = document.querySelector('#infoSheet');
 	if (infoSheet.style.animationName === 'animateInfo') {
 		infoSheet.style.animationName = '';
